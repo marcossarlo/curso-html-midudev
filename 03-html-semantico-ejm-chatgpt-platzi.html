@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma de educación en línea con cursos especializados en tecnología y desarrollo personal.">
+  <title>Mi Plataforma Educativa</title>
+  <!-- <style>
+    /* Estilos básicos para visualización */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 1em;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    figure {
+      margin: 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: #666;
+    }
+    aside {
+      background-color: #f4f4f4;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style> -->
+</head>
+<!-- CHATGPT: "Site como Platzi"
+Descripción:
+- Cabecera (<header>): Incluye el título del sitio y un menú de navegación con enlaces a secciones clave como Inicio, Cursos, Instructores, Testimonios y Contacto.
+- Navegación (<nav>): Los enlaces están agrupados en un menú de navegación principal.
+- Sección de inicio (<section>): Presenta un mensaje de bienvenida y una imagen con su correspondiente descripción utilizando la etiqueta <figure> y <figcaption>.
+- Sección de cursos (<section>): Aquí se muestran artículos (<article>) con descripciones de los cursos, fechas de publicación con <time>, imágenes y leyendas con <figure> y <figcaption>.
+- Sección de instructores (<section>): Listado de los instructores destacados con descripciones breves.
+- Sección de testimonios (<section>): Comentarios de estudiantes que han tomado los cursos.
+Barra lateral (<aside>): Información adicional sobre una oferta especial resaltada con la etiqueta <mark>.
+- Sección con detalles colapsables (<details> y <summary>): Permite mostrar más contenido oculto bajo un botón de "ver más".
+- Pie de página (<footer>): Contiene derechos de autor y la fecha de la última actualización del sitio.
+
+-->
+
+  <!-- Cabecera del sitio web -->
+  <header>
+    <h1>Mi Plataforma Educativa</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#instructores">Instructores</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    
+    <!-- Sección de inicio -->
+    <section id="inicio">
+      <h2>Bienvenido a la Plataforma de Aprendizaje</h2>
+      <p>Explora nuestros cursos y mejora tus habilidades en tecnología, desarrollo personal y más.</p>
+      <figure>
+        <img src="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_632ccd92fa0173087ac5acb2_632ccd92fa0173087ac5acbe_7s.jpg" alt="Estudiantes aprendiendo en línea" width="500">
+        <figcaption>Estudiantes conectados a nuestra plataforma de aprendizaje.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Sección de Cursos -->
+    <section id="cursos">
+      <h2>Nuestros Cursos</h2>
+      <article>
+        <h3>Curso de Desarrollo Web</h3>
+        <p>Aprende a crear sitios web desde cero con HTML, CSS y JavaScript.</p>
+        <figure>
+          <img src="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_66da1a706610c2ee8176439e_66da1a706610c2ee817643b0_24s.jpg" alt="Desarrollo web" width="300">
+          <figcaption>Un ejemplo de desarrollo web moderno.</figcaption>
+        </figure>
+        <p>Publicado el <time datetime="2024-09-01">1 de septiembre de 2024</time>.</p>
+      </article>
+
+      <article>
+        <h3>Curso de Diseño UI/UX</h3>
+        <p>Domina las técnicas de diseño centrado en el usuario para crear experiencias de calidad.</p>
+        <figure>
+          <img src="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_66da1a706610c2ee8176439e_66da1a706610c2ee817643b0_24s.jpg" alt="Diseño UI/UX" width="300">
+          <figcaption>Interfaces de usuario limpias y centradas en la experiencia del usuario.</figcaption>
+        </figure>
+        <p>Publicado el <time datetime="2024-08-15">15 de agosto de 2024</time>.</p>
+      </article>
+    </section>
+
+    <!-- Sección de Instructores -->
+    <section id="instructores">
+      <h2>Instructores</h2>
+      <p>Conoce a los expertos que te acompañarán en tu proceso de aprendizaje.</p>
+      <article>
+        <h3>Juan Pérez</h3>
+        <p>Experto en desarrollo web con más de 10 años de experiencia.</p>
+      </article>
+      <article>
+        <h3>Ana Gómez</h3>
+        <p>Diseñadora UX con proyectos reconocidos a nivel internacional.</p>
+      </article>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <article>
+        <h3>María López</h3>
+        <p>"Gracias a esta plataforma, conseguí mi primer trabajo como desarrolladora web."</p>
+      </article>
+      <article>
+        <h3>Pedro Ramírez</h3>
+        <p>"Los cursos son muy completos y los instructores siempre están disponibles para ayudar."</p>
+      </article>
+    </section>
+
+    <!-- Barra lateral con información adicional -->
+    <aside>
+      <h3>Oferta Especial</h3>
+      <p>Aprovecha nuestro <mark>descuento del 50%</mark> en todos los cursos por tiempo limitado.</p>
+    </aside>
+
+    <!-- Sección colapsable con más detalles -->
+    <section>
+      <details>
+        <summary>Ver más cursos</summary>
+        <p>También ofrecemos cursos en marketing digital, inteligencia artificial y más.</p>
+      </details>
+    </section>
+    
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Mi Plataforma Educativa. Todos los derechos reservados.</p>
+    <p>Última actualización: <time datetime="2024-09-15">15 de septiembre de 2024</time>.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+# Curso de HTML
+¡Curso COMPLETO de HTML GRATIS desde cero: SEO, semántica y más!.
+## Desarrollado por MiDuDev
+
+URL:
+https://www.youtube.com/watch?v=3nYLTiY5skU
+
+## Apuntes
+- Algunas etiquetas no necesitan cierre: < img >, < br >
+- Atributos:
+    - todo en minúsculas
+    - no es oblicagotio poner las comillas, siempre y cuando no tengan espacios en blanco
+    - atributos globales:
+     - hidden: booleano son true por defecto.
+     - id, class  
+- Si hay etiquetas HTML que indican como se ve el contenido , NO se recomienda:
+    - < b ></ b>, < center></ center>
+- Tienen que indicar que Representa:
+    - < strong >< /strong >
+- Estilos por defecto: User agent stylesheet 
+     - CSS reset
+- HTML Semántico:
+    - es la clave de usar correctamente HTML 
+    - significa que el código tiene un significado
+    - describe el contenido de forma correcta:
+        - < h1 > un encabezado, 
+        - < p>  describe un párrafo,
+        - < ul > una lista no ordenada
+- Etiquetas MAIN:
+    - solo debe haber uno en el documento
+    - lo hace único en cada página
+- No usar DIVs en lo posible: no es semántico.
+    - significa Dividir,
+    - permite dividir el contenido
+    - si no hay un significado semántico, está bien usar DIV / SPAN
+- Etiquetas NO semanticas:
+    - < span > agrupa contenido en linea
+    - < div > agrupa contenido en bloque  
+- Accesibility:
+    - F12: ctrol+shift+p: show accessibility - marcar: Enable full-page accessibility tree y reiniciar Devtools
+- Enlaces espciales:
+    - para email, llamar por telefono, WhatsApp...
+    - Si queremos forzar que se descargue algún elemento, como una imagen, video, documento, etc.. siempre y cuando el archivo sea local, usar el atributo: DOWNLOAD en la etiqueta < a >:
+        - < a download href="/images/me.jpg" >
+- Etiqueta de Formulario:
+    - Usar los inputs correctos: text, email, tel...
+    - por semantica, es preferible usar button en vez de input
+- < datalist >
+    - te permite hacer como un autocomplete
+- < details > - < summary >
+    - es como 
+- Audio: 
+    - controls: muestra los controles
+    - autoplay: se reproduce automaticamente
+    - muted: sin sonido
+    - loop: se repite
+    - preload: carga el audio
+    - src: fuente del audio 
+- Video: se puede usar como fondo con CSS y muted
+    - controls: muestra los controles
+    - autoplay: se reproduce automaticamente
+    - muted: sin sonido
+    - loop: se repite
+    - poster: imagen de portada
+    - src: fuente del video
+- Loading Lazy
+    - No utilizarlo si la imagen aparece al inicio de la página
+    - loading="lazy" carga la imagen cuando se visualiza
+    - para mantener la relación de aspecto:
+        - style="width: 100%; aspect-ratio:1826/1028;" 
+- iframe:
+    - permite incrustar contenido de otro sitio web
+    - style="width: 100%; aspect-ratio:16/9;" para mantener la relación de aspecto
+- Tag Dialog
+    - se usa para mostrar contenido en una ventana modal
+    - open: para que se muestre al inicio
+    - close: para cerrar 
+    - showModal(): para mostrar
+    - close(): para cerrar
+    - Tener en cuenta, IDs
+        - al crear un idendificador (id) en nuestras etiquetas HTML, se crea una propiedad en el objeto windoww con el nombre de esa id
+    - no abusar e los id en las etiquetas
+    - tener cuidado con los nombres de las id, ya que puede haber colisiones con las propiedades del objeto window, por ejemplo: open, close, etc.
+- El JS no cesesariamente debe ir al inico o final,pue ir despues de donde se le convoque.

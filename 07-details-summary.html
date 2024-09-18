@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de marcossarlo: HTML Semántico </title>
+
+    <!-- Problar estos: -->
+    <link rel="alternate" href="https://marcossarlo.com/en" hreflang="es-GB">
+    <link rel="canonical" href="https://marcossarlo.com">
+
+    <meta name="theme-color" content="#ff6600">
+
+</head>
+<body>
+    <header>
+        <h1>Portfolio de @marcossarlo</h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a 
+                href="https://x.com/marcossarlo"
+                target="_blank"
+                rel="noreferer noopener"
+            >X
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Soy <strong>Ingeniero Informático</strong>, especializado en la implementación y gestión de <em>plataformas eLearning basadas en Moodle</em>, así como en el desarrollo de proyectos web utilizando Joomla.</p>
+
+        <h2 id="experiencia">Experiencia</h2>
+        <o>
+            <li>IGP del Perú</li>
+            <li>Fondo Verde</li>
+            <li>Freelance</li>
+        </o>
+        <a download href="/images/me.jpg">
+            <img
+                id="photo-msl"
+                class="photos"
+                src="/images/me.jpg" 
+                alt="Una fotografía de marcossarlo con una leve sonrisa"
+                title="Fotografía de marcossarlo"
+                width="200"
+                height=200 >
+        </a>
+        <h2 id="proyectos">Proyectos realizados</h2>
+
+        <aside> <!-- al lado en el contenido, no necesariamente en lo visual -->
+            <header>
+                <h3>Mis tecnologpias favoritas</h3>
+            </header>
+            <ol type="1" start="10">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>NodeJS</li>
+            </ol>
+            <ol type="1" reversed start="10">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>NodeJS</li>
+            </ol>
+            <ol type="1" reversed start="10">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li value="5">JavaScript</li>
+                <li>NodeJS</li>
+            </ol>
+        </aside>
+
+        <section> <!-- secciones genericas independiente de un documento, puede haber sub-secciones-->
+            <article>
+                <header>
+                    <h3>Proyecto 1</h3>
+                </header>
+                <p>Descripción del proyecto 1</p>
+                <footer>
+                    <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h3>Proyecto 2</h3>
+                </header>
+                <p>Descripción del proyecto 2</p>
+                <footer>
+                    <small>Tecnologías utilizadas: Yii, HTML, CSS, JavaScript</small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <h3>Preguntas Frecuentes</h3>
+            <details open>
+                <summary>¿Qué estudios tienes?</summary>
+                <p>Estudié en la Universidad Continetal una Ingeniería Informática durante 5 años.</p>
+            </details>
+            <details>
+                <summary>¿Cuáles son tu hobbies?</summary>
+                <p>Me gusta mucho el deporte, en especial el fútbol y el ciclismo.</p>
+            </details>
+            <details>
+                <summary>¿Cuál es tu lenguaje de programación favorito?</summary>
+                <p>Me encanta JavaScript, es muy versátil y me permite hacer muchas cosas.</p>                  
+            </details>
+        </section>
+
+        <section>
+            <header>
+                <h3>Formulario de contacto</h3>
+            </header>
+            <form action="/contacto" method="post"> 
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="marcos" required>
+
+                    <label>Apellidos:
+                        <input type="text" name="lastname" placeholder="sarlo" required>
+                    </label>
+                    <div>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="me@marcossarlo.net" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>Información adicional</legend>
+                    <label>Teléfono:
+                        <input type="tel" name="phone" placeholder="123456789" required pattern="[0-9]{9}">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>                        
+                        <label>Porque quieres contactar?
+                        <select name="reason" required>
+                            <option value="consulta">Consulta</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="duda">Duda</option>
+                        </select>                        
+                        </label>                    
+                    </div>
+                    <div>
+                        <label>¿Aceptas los términos?
+                            <input type="checkbox" name="terms" required>
+                        </label>
+                    </div>
+                    <div>
+                        <datalist id="languages">
+                            <option value="JavaScript">
+                            <option value="PHP">
+                            <option value="Python">
+                            <option value="NodeJS">
+                        </datalist>
+                        <label>¿Qué lenguaje de programación prefieres?
+                            <input list="languages" name="languages">
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <!-- 
+                <input type="submit" value="Enviar contacto"> 
+                -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                <!--Por semantica, es preferible usar button en vez de input-->
+            </form>                
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2021 marcossarlo</p>
+    </footer>
+    
+</body>
+</html>
