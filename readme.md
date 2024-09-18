@@ -5,7 +5,7 @@
 URL:
 https://www.youtube.com/watch?v=3nYLTiY5skU
 
-## Apuntes
+## Mis Apuntes
 - Algunas etiquetas no necesitan cierre: < img >, < br >
 - Atributos:
     - todo en minúsculas
