@@ -111,7 +111,36 @@
                     <h3>Proyecto 1</h3>
                 </header>
                 <p>Descripción del proyecto 1</p>
-                <img style="width: 100%; aspect-ratio:1826/1028;" loading="lazy" src="/images/tesla.webp" alt="Proyecto 1">
+                <!-- 
+                    Este fragmento de código HTML utiliza el elemento <picture> para proporcionar diferentes versiones de una imagen 
+                    dependiendo del tipo de archivo y del ancho de la pantalla del dispositivo.
+
+                    - <source>: Define diferentes fuentes de imagen para diferentes condiciones.
+                        - srcset: Especifica la URL de la imagen.
+                        - type: Especifica el tipo MIME de la imagen.
+                        - media: Define una consulta de medios que determina cuándo se debe usar esta fuente de imagen.
+
+                    - <img>: Proporciona una imagen de respaldo que se mostrará si ninguna de las fuentes <source> coincide con las condiciones.
+
+                    En este caso:
+                    - Si el ancho de la pantalla es mayor o igual a 800px, se utilizará "big.webp" o "big.jpg".
+                    - Si el ancho de la pantalla es menor a 800px, se utilizará "small.webp" o "small.jpg".
+                    - Si ninguna de las condiciones anteriores se cumple, se mostrará "default.jpg".
+
+                    Atributos:
+                    - src: URL de la imagen de respaldo.
+                    - alt: Texto alternativo que describe la imagen.
+                -->
+                <picture>
+                    <source srcset="/images/tesla.webp" type="image/webp" media="(width >= 1000px)">
+                    <source srcset="/images/tesla.jpg" type="image/jpeg" media="(width >= 1000px)">
+                    
+                    <source srcset="/images/tesla_small.webp" type="image/webp" media="(width < 1000px)">
+                    <source srcset="/images/tesla_small.jpg" type="image/jpeg" media="(width < 1000px)">
+                    
+                    <img src="/images/tesla.webp" alt="Describe la imagen aquí" style="width: 100%; aspect-ratio:1826/1028;">
+                  </picture>
+
                 
                 <footer>
                     <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
