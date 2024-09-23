@@ -13,17 +13,19 @@
 
 </head>
 <body>
-    <!-- tag Dialog
-        - se usa para mostrar contenido en una ventana modal
-        - open: para que se muestre al inicio
-        - close: para cerrar 
-        - showModal(): para mostrar
-        - close(): para cerrar
-
-        Tener en cuenta, IDs
-        - al crear un idendificador (id) en nuestras etiquetas HTML, se crea una propiedad en el objeto windoww con el nombre de esa id
-        - no abusar e los id en las etiquetas
-        - tener cuidado con los nombres de las id, ya que puede haber colisiones con las propiedades del objeto window, por ejemplo: open, close, etc.
+    <!-- tag Picture:
+     Como usar la etiquet Picture: 
+        - La etiqueta <picture> se utiliza para proporcionar diferentes versiones de una imagen dependiendo del tipo de archivo y del ancho de la pantalla del dispositivo.
+        - La etiqueta <source> se utiliza para definir diferentes fuentes de imagen para diferentes condiciones.
+        - La etiqueta <img> se utiliza para proporcionar una imagen de respaldo que se mostrará si ninguna de las fuentes <source> coincide con las condiciones.
+        - La etiqueta <source> puede tener los siguientes atributos:
+            - srcset: Especifica la URL de la imagen.
+            - type: Especifica el tipo MIME de la imagen.
+            - media: Define una consulta de medios que determina cuándo se debe usar esta fuente de imagen.
+        - La etiqueta <img> puede tener los siguientes atributos:
+            - src: URL de la imagen de respaldo.
+            - alt: Texto alternativo que describe la imagen.
+        
     -->
     <header>
         <h1>Portfolio de @marcossarlo</h1>
@@ -112,15 +114,7 @@
                 </header>
                 <p>Descripción del proyecto 1</p>
                 <!-- 
-                    Este fragmento de código HTML utiliza el elemento <picture> para proporcionar diferentes versiones de una imagen 
-                    dependiendo del tipo de archivo y del ancho de la pantalla del dispositivo.
-
-                    - <source>: Define diferentes fuentes de imagen para diferentes condiciones.
-                        - srcset: Especifica la URL de la imagen.
-                        - type: Especifica el tipo MIME de la imagen.
-                        - media: Define una consulta de medios que determina cuándo se debe usar esta fuente de imagen.
-
-                    - <img>: Proporciona una imagen de respaldo que se mostrará si ninguna de las fuentes <source> coincide con las condiciones.
+                    La etiqueta <picture> se utiliza para proporcionar diferentes versiones de una imagen dependiendo del tipo de archivo y del ancho de la pantalla del dispositivo.
 
                     En este caso:
                     - Si el ancho de la pantalla es mayor o igual a 800px, se utilizará "big.webp" o "big.jpg".
@@ -133,10 +127,10 @@
                 -->
                 <picture>
                     <source srcset="/images/tesla.webp" type="image/webp" media="(width >= 1000px)">
-                    <source srcset="/images/tesla.jpg" type="image/jpeg" media="(width >= 1000px)">
+                    <!-- <source srcset="/images/tesla.jpg" type="image/jpeg" media="(width >= 1000px)"> -->
                     
                     <source srcset="/images/tesla_small.webp" type="image/webp" media="(width < 1000px)">
-                    <source srcset="/images/tesla_small.jpg" type="image/jpeg" media="(width < 1000px)">
+                    <!-- <source srcset="/images/tesla_small.jpg" type="image/jpeg" media="(width < 1000px)"> -->
                     
                     <img src="/images/tesla.webp" alt="Describe la imagen aquí" style="width: 100%; aspect-ratio:1826/1028;">
                   </picture>
